@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krizam | Portafolio</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR (Bootstrap) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#inicio">Krizam</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+        aria-controls="menu" aria-expanded="false" aria-label="Menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="inicio" class="hero d-flex align-items-center">
+    <div class="container text-center" data-aos="fade-up">
+      <h1 class="display-4 fw-bold">Krizam</h1>
+      <p class="lead text-primary">Editor de video y diseñador sonoro</p>
+      <p class="fs-5">Construyo experiencias audiovisuales que conectan, emocionan y permanecen.</p>
+      <a href="#proyectos" class="btn btn-primary mt-3">
+        <i class="fa-solid fa-film me-2"></i>Ver proyectos
+      </a>
+    </div>
+  </header>
+
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-up">Sobre mí</h2>
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-md-7" data-aos="fade-right">
+          <p>Soy estudiante de ingeniería de sonido, enfocado en diseñar experiencias audiovisuales que conecten emocionalmente y generen impacto. Me distingo por una mentalidad disciplinada, pensamiento estratégico y una base ética sólida que guía cada decisión profesional.</p>
+          <p>He desarrollado habilidades en producción sonora, edición audiovisual y comunicación efectiva, aplicadas en proyectos reales en constante evolución.</p>
+          <p>Actualmente potencio mi enfoque y constancia para convertir mi capacidad creativa en resultados medibles y sostenibles.</p>
+          <p>Busco integrarme a equipos innovadores donde pueda aportar valor, crecer profesionalmente y contribuir a proyectos con impacto real.</p>
+        </div>
+        <div class="col-12 col-md-5 text-center" data-aos="fade-left">
+          <img src="img/foto-perfil.jpg" alt="Foto de Krizam" class="foto-perfil img-fluid rounded-circle shadow"
+            onerror="this.style.display='none'; document.getElementById('placeholder-foto').style.display='flex';">
+          <div id="placeholder-foto" class="foto-placeholder mx-auto">K</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-up">Habilidades</h2>
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+          <div class="card h-100 text-center p-3">
+            <i class="fa-solid fa-headphones fa-2x text-primary mb-2"></i>
+            <h5 class="card-title">Diseñador sonoro</h5>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 text-center p-3">
+            <i class="fa-solid fa-microphone fa-2x text-primary mb-2"></i>
+            <h5 class="card-title">Edición de audio</h5>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 text-center p-3">
+            <i class="fa-solid fa-wand-magic-sparkles fa-2x text-primary mb-2"></i>
+            <h5 class="card-title">Limpieza de audio</h5>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 text-center p-3">
+            <i class="fa-solid fa-video fa-2x text-primary mb-2"></i>
+            <h5 class="card-title">Edición de video</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS (Swiper) -->
+  <section id="proyectos" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-up">Proyectos</h2>
+      <div class="swiper" data-aos="zoom-in">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Cortometrajes escolares</h5>
+                <p class="card-text">Producción y postproducción de cortometrajes en contexto académico. Diseño sonoro, edición de audio y video.</p>
+                <span class="badge bg-primary">Audiovisual</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Cortometraje — Festival de cine</h5>
+                <p class="card-text">Proyecto seleccionado para festival. Trabajo integral en sonido y edición para narrativa cinematográfica.</p>
+                <span class="badge bg-primary">Festival</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-up">Contacto</h2>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6" data-aos="fade-up">
+          <p class="text-center mb-3">
+            <i class="fa-regular fa-envelope text-primary"></i>
+            <a href="mailto:ccamilopaz30@gmail.com">ccamilopaz30@gmail.com</a>
+          </p>
+          <form id="form-contacto" class="card card-body shadow-sm">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+              <i class="fa-solid fa-paper-plane me-2"></i>Enviar
+            </button>
+            <div id="alerta-contacto" class="alert alert-success mt-3 d-none" role="alert"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-3 border-top">
+    <small class="text-muted">© 2026 Krizam — Portafolio académico</small>
+  </footer>
+
+  <!-- JS: Bootstrap, AOS, Swiper, propio (antes de </body>) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
